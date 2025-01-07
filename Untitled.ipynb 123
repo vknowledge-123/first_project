@@ -1,0 +1,486 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8752630f-d58a-4f87-bfbc-e3d872f0e4b6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b3b465c1-97d9-4130-9e2d-a19bd26813e5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "acfac56b-8e6b-47d8-b27f-c2cf25b0249f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "e5b1375c-dae0-4b58-8ed7-1bb7039c3ae1",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (4088168262.py, line 7)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[3], line 7\u001b[0;36m\u001b[0m\n\u001b[0;31m    return self.PE_ratio = self.Market_share_price/self.earnings\u001b[0m\n\u001b[0m                         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "class PEratio:\n",
+    "    PE_ratio=0\n",
+    "    def getPEratio (self):\n",
+    "\n",
+    "        self.Market_share_price=int(input(\"enter the market price of share\"))\n",
+    "        self.earnings=int(input(\"enter the earning of company\"))\n",
+    "        return self.PE_ratio = self.Market_share_price/self.earnings\n",
+    "class PBratio:\n",
+    "    def getPBratio (self):\n",
+    "        return self.PBratio = market_price_of_share/Book_value\n",
+    "class discountdivmodel:\n",
+    "    def getDividendDiscountmodel (self):\n",
+    "        return self.DividendDiscountmodel = (1 + growth_rate)/(discount_rate - growth_rate)\n",
+    "class EPS:\n",
+    "    def getEPS (self):\n",
+    "        return self.EPS = earnings/total_shares\n",
+    "class Discounted_cash_flow:\n",
+    "    def getDiscountedcashflow (self):\n",
+    "        return self.Discountedcashflow = cash_flow/(1 + discount_rate)\n",
+    "\n",
+    "class equity_valution:\n",
+    "    PEratio_obj=PEratio()\n",
+    "    PBratio_obj=PBration()\n",
+    "    discount_DIV_model_obj=discountdivmodel()\n",
+    "    EPS_obj=EPS()\n",
+    "    Disocunt_cash_obj=Discounted_cash_flow()\n",
+    "    PEratio_obj.getPEratio()\n",
+    "\n",
+    "    \n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f2e76c65-bf0c-43cd-94a8-eb7259d72984",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "weekly sales data is max... 700\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data = [250,500,100,300,700,450,600]\n",
+    "maxvalue= sales_data[0]\n",
+    "for i in range (0,len(sales_data)):\n",
+    "    if (maxvalue < sales_data[i]):\n",
+    "        maxvalue = sales_data[i]\n",
+    "print(\"weekly sales data is max...\",maxvalue)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "80b88a5e-4264-4df7-9c69-bed852d21615",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "34e4adf6-1c20-45a8-a226-09c3c98008a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "weekly sales data is min... 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data = [250,500,100,300,700,450,600]\n",
+    "minvalue= sales_data[0]\n",
+    "for i in range (0,len(sales_data)):\n",
+    "    if (minvalue > sales_data[i]):\n",
+    "        minvalue = sales_data[i]\n",
+    "print(\"weekly sales data is min...\",minvalue)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "50eed149-7227-466f-9ba2-cb2e9839a73b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[250, 500, 100, 300, 700, 400]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data.pop(6)\n",
+    "print(sales_data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "05762760-50e5-4684-8f47-9d6ef1af5a8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[250, 500, 100, 700, 400, 600]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data.remove(300)\n",
+    "print(sales_data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "fd0737a9-380f-4625-a300-25a7d4950df8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[250, 500, 100, 300, 700, 450, 600, 2900]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales_data.append(2900)\n",
+    "print(sales_data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "5354feb2-79b7-4e37-bce7-8b2cd3535d58",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "250\n",
+      "500\n",
+      "100\n",
+      "300\n",
+      "700\n",
+      "450\n",
+      "600\n",
+      "2900\n"
+     ]
+    }
+   ],
+   "source": [
+    "sumofsales= 0\n",
+    "for i in sales_data:\n",
+    "    print(i)\n",
+    "    sumofsales= sumofsales + i\n",
+    "print(sumofsales)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c32a786f-38e0-40eb-8739-ba5f27ad0307",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sales_data = [250,500,100,300,700,450,600]\n",
+    "\n",
+    "#import math\n",
+    "#total_sales=sum(sales_data)\n",
+    "#print(total_sales)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fc218a8-c484-4c92-ac14-eedc3ffd8590",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "i=0\n",
+    "while i<6:\n",
+    "    sales_manager_requirement=int(input(\" Enter the key to process sales information\"))\n",
+    "    if sales_manager_requirement==0:\n",
+    "        print(sales_data)\n",
+    "    elif sales_manager_requirement==1:\n",
+    "        print(sales_data.append(1200))\n",
+    "        print(sales_data)\n",
+    "    elif sales_manager_requirement==2:\n",
+    "        print(max(sales_data))\n",
+    "    elif sales_manager_requirement==3:\n",
+    "        print(min(sales_data))\n",
+    "    elif sales_manager_requirement==4:\n",
+    "        print(sum(sales_data))\n",
+    "    else :\n",
+    "        print(\"Exit manager sahab\")\n",
+    "    i+=1\n",
+    "        \n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c273ac3-c669-44e9-822a-d52a7a839e5d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 250\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 300\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 400\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 450\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 500\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sales 550\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "manager allow into software\n",
+      "enter thr detail of 1st employee\n"
+     ]
+    }
+   ],
+   "source": [
+    "weekly_sales=[]\n",
+    "sum_of_sales=0\n",
+    "for i in range (0,7):\n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        print(\"enter the details of 1st employee\")\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allows into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)  \n",
+    "    print(weekly_sales)\n",
+    "   \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        print(\"enter thr detail of 2nd employee\")\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales) \n",
+    "    print(weekly_sales)\n",
+    "   \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        print(\"enter the details of 3rd employee\")\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "    j=0\n",
+    "    while j<7:\n",
+    "        sum_of_sales = 0\n",
+    "        sales_of_executive = int(input(\"enter the sales\"))\n",
+    "        if (sales_of_executive > 200):\n",
+    "            print(\"manager allow into software\")\n",
+    "            j= j + 1\n",
+    "            sum_of_sales = sum_of_sales + sales_of_executive\n",
+    "    weekly_sales.append(sum_of_sales)        \n",
+    "               \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ce7aad1d-c474-46b0-8c78-716af2ab822c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81513863-844d-48d2-8d37-2f450460d204",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
