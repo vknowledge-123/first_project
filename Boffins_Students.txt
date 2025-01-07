@@ -1,0 +1,3 @@
+Mandar,4,5,2
+Shruti,5,3,4
+Vaishnavi,3,4,4
